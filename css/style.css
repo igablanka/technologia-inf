@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a.scroll-link {
+    float:  left;
+}
+
 h1, h2, h3 {
     margin: 20px 0;
     text-align: center;
@@ -145,17 +149,18 @@ img {
 
 .logo {
     display: inline-block;
+    float: right;
 }
 
 .author {
-    float: right;
+    float: left;
 }
 
 .menu {
     position: fixed;
     top: 71px;
     bottom: 0;
-    left: -250px;
+    right: -250px;
     background-color: white;
     width: 250px;
     z-index: 100000000;
@@ -163,11 +168,11 @@ img {
     box-sizing: border-box;
     transition: all .3s;
     -webkit-transition: all .3s;
-    border-right: 1px silver solid;
+    border-left: 1px silver solid;
 }
 
 .menu.open {
-    left: 0;
+    right: 0;
 }
 
 .menu a {
@@ -232,3 +237,4 @@ label {
     display: block;
     text-align: center;
 }
+
